@@ -171,14 +171,26 @@
 
   <footer class="site-footer">
     <div class="container">
-      © <span id="year"></span> Bastian Wittmann. Page last updated <span id="last-updated"></span>.
+      © <span id="year"></span> Bastian Wittmann · Last updated: <span id="last-updated">—</span>.
     </div>
   </footer>
   <script>
-    const now = new Date();
-    document.getElementById('year').textContent = now.getFullYear();
-    document.getElementById('last-updated').textContent =
-      now.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  
+    fetch("https://api.github.com/repos/bwittmann/bwittmann.github.io/commits?per_page=1")
+      .then(res => res.json())
+      .then(data => {
+        const date = new Date(data[0].commit.committer.date);
+        document.getElementById("last-updated").textContent =
+          date.toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "short",
+            day: "numeric"
+          });
+      })
+      .catch(() => {
+        document.getElementById("last-updated").textContent = "unknown";
+      });
   </script>
   <!-- <script>document.getElementById('year').textContent=new Date().getFullYear()</script> -->
 </body>
