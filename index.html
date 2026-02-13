@@ -174,6 +174,12 @@
       © <span id="year"></span> Bastian Wittmann. Page last updated <span id="last-updated"></span>.
     </div>
   </footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  <script>
+    const now = new Date();
+    document.getElementById('year').textContent = now.getFullYear();
+    document.getElementById('last-updated').textContent =
+      now.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+  </script>
+  <!-- <script>document.getElementById('year').textContent=new Date().getFullYear()</script> -->
 </body>
 </html>
