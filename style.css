@@ -43,10 +43,10 @@ details.bibtex{display:inline-block}
 details.bibtex summary{list-style:none;cursor:pointer;display:inline-block;padding:2px 6px;border:1px solid #000;border-radius:12px;font-size:11px;line-height:1.3;height:20px;min-width:32px;text-align:center;white-space:nowrap}
 details.bibtex[open] summary{background:#f7f7f7}
 details.bibtex pre{background:#fafafa;border:1px solid var(--border);padding:8px;margin-top:8px;white-space:pre-wrap;overflow:auto;font-size:11px;line-height:1.4;position:absolute;z-index:10;min-width:300px}
-/* details.bibtex summary{
+details.bibtex summary{
     position: relative;
-    top: 20px;
-  } */
+    top: -2px;
+  }
 
 /* Accessibility */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
