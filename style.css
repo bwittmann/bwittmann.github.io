@@ -45,7 +45,7 @@ details.bibtex[open] summary{background:#f7f7f7}
 details.bibtex pre{background:#fafafa;border:1px solid var(--border);padding:8px;margin-top:8px;white-space:pre-wrap;overflow:auto;font-size:11px;line-height:1.4;position:absolute;z-index:10;min-width:300px}
 details.bibtex summary{
     position: relative;
-    top: -2px;
+    top: -1px;
   }
 
 /* Accessibility */
