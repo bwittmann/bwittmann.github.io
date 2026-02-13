@@ -1,1 +1,1 @@
-© Bastian Wittmann 2026, on all assets.
+© Bastian Wittmann 2026
