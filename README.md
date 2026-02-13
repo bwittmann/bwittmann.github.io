@@ -1,1 +1,1 @@
-bwittmann.github.io
+© Bastian Wittmann 2026, on all assets.
