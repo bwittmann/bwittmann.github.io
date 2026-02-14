@@ -71,18 +71,24 @@ img,svg,video{max-width:100%;height:auto}
 /* Expandable container */
 details summary {
   cursor: pointer;
-  list-style: none;
+  list-style: none;  /* hides bullets, keep this */
   outline: none;
+  font-size: 22px;   /* match h2 size */
+  font-weight: 700;  /* match h2 weight */
+  line-height: 1.7;  /* match h2 spacing */
+  display: inline;   /* keep text on one line */
+  padding-left: 0;   /* remove unnecessary padding */
 }
 
-details[open] summary h2 {
-  /* Optional: highlight open headings */
+/* Optional: highlight open headings */
+details[open] summary {
   color: var(--link);
 }
 
-details summary::-webkit-details-marker {
-  display: none; /* Remove default arrow if you want a custom icon */
-}
+/* Remove this line to restore default browser arrows */
+/* details summary::-webkit-details-marker {
+  display: none;
+} */
 
 details > div {
   margin-top: 10px;
