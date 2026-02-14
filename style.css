@@ -86,3 +86,16 @@ details > div {
   margin-top: 10px;
   padding-left: 12px;    /* optional content indent */
 }
+
+summary.h2-style {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+/* h3-style summary (smaller) */
+summary.h3-style {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+}
