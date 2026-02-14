@@ -71,13 +71,13 @@ img,svg,video{max-width:100%;height:auto}
 /* Expandable container */
 details summary {
   cursor: pointer;
-  list-style: none;  /* hides bullets, keep this */
+  font-size: 22px;   /* h2 size, use 18px for h3 */
+  font-weight: 700;  /* bold */
+  line-height: 1.7;
+  display: list-item;  /* default for summary, needed for arrow */
+  list-style-position: inside; /* keeps arrow visible */
   outline: none;
-  font-size: 22px;   /* match h2 size */
-  font-weight: 700;  /* match h2 weight */
-  line-height: 1.7;  /* match h2 spacing */
-  display: inline;   /* keep text on one line */
-  padding-left: 0;   /* remove unnecessary padding */
+  padding-left: 0;   /* optional */
 }
 
 /* Optional: highlight open headings */
@@ -85,12 +85,7 @@ details[open] summary {
   color: var(--link);
 }
 
-/* Remove this line to restore default browser arrows */
-/* details summary::-webkit-details-marker {
-  display: none;
-} */
-
 details > div {
   margin-top: 10px;
-  padding-left: 12px; /* optional indent for content */
+  padding-left: 12px; /* optional indent */
 }
