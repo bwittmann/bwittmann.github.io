@@ -71,20 +71,16 @@ img,svg,video{max-width:100%;height:auto}
 /* Expandable container */
 details summary {
   cursor: pointer;
-  list-style: none;
+  font-size: 22px;  /* h2 size */
+  font-weight: 700;  /* h2 weight */
+  line-height: 1.7;
+  list-style: none;  /* keep it clean */
   outline: none;
 }
-
-details[open] summary h2 {
-  /* Optional: highlight open headings */
-  color: var(--link);
+details[open] summary {
+  color: var(--link); /* optional highlight when open */
 }
-
-details summary::-webkit-details-marker {
-  display: none; /* Remove default arrow if you want a custom icon */
-}
-
 details > div {
   margin-top: 10px;
-  padding-left: 12px; /* optional indent for content */
+  padding-left: 12px;
 }
