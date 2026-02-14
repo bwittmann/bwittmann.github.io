@@ -91,6 +91,7 @@ summary.h2-style {
   font-size: 22px;
   font-weight: 700;
   line-height: 1.7;
+  margin-bottom: 20px;
 }
 
 /* h3-style summary (smaller) */
@@ -98,4 +99,5 @@ summary.h3-style {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
+  margin-bottom: 20px;
 }
