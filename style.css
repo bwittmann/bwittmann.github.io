@@ -71,16 +71,20 @@ img,svg,video{max-width:100%;height:auto}
 /* Expandable container */
 details summary {
   cursor: pointer;
-  font-size: 22px;  /* h2 size */
-  font-weight: 700;  /* h2 weight */
-  line-height: 1.7;
-  list-style: none;  /* keep it clean */
+  font-size: 22px;       /* matches h2 size */
+  font-weight: 700;      /* h2 weight */
+  line-height: 1.7;      
+  list-style: initial;   /* important: keeps the default arrow */
   outline: none;
+  display: list-item;    /* ensures marker appears */
+  padding-left: 0;       /* optional */
 }
+
 details[open] summary {
-  color: var(--link); /* optional highlight when open */
+  color: var(--link);    /* optional highlight when open */
 }
+
 details > div {
   margin-top: 10px;
-  padding-left: 12px;
+  padding-left: 12px;    /* optional content indent */
 }
