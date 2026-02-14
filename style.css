@@ -80,9 +80,9 @@ details[open] summary h2 {
   color: var(--link);
 }
 
-details summary::-webkit-details-marker {
+/* details summary::-webkit-details-marker {
   display: none; /* Remove default arrow if you want a custom icon */
-}
+} */
 
 details > div {
   margin-top: 10px;
