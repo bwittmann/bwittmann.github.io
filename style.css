@@ -71,21 +71,15 @@ img,svg,video{max-width:100%;height:auto}
 /* Expandable container */
 details summary {
   cursor: pointer;
-  font-size: 22px;   /* h2 size, use 18px for h3 */
-  font-weight: 700;  /* bold */
-  line-height: 1.7;
-  display: list-item;  /* default for summary, needed for arrow */
-  list-style-position: inside; /* keeps arrow visible */
+  list-style: none;
   outline: none;
-  padding-left: 0;   /* optional */
 }
 
-/* Optional: highlight open headings */
-details[open] summary {
-  color: var(--link);
+details summary::-webkit-details-marker {
+  display: none; /* Remove default arrow if you want a custom icon */
 }
 
 details > div {
   margin-top: 10px;
-  padding-left: 12px; /* optional indent */
+  padding-left: 12px; /* optional indent for content */
 }
