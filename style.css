@@ -67,3 +67,24 @@ img,svg,video{max-width:100%;height:auto}
 @media (max-width:600px){
   .pub-item img{width:min(88vw,520px)!important}
 }
+
+/* Expandable container */
+details summary {
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+}
+
+details[open] summary h2 {
+  /* Optional: highlight open headings */
+  color: var(--link);
+}
+
+details summary::-webkit-details-marker {
+  display: none; /* Remove default arrow if you want a custom icon */
+}
+
+details > div {
+  margin-top: 10px;
+  padding-left: 12px; /* optional indent for content */
+}
