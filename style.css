@@ -75,6 +75,11 @@ details summary {
   outline: none;
 }
 
+details[open] summary h2 {
+  /* Optional: highlight open headings */
+  color: var(--link);
+}
+
 details summary::-webkit-details-marker {
   display: none; /* Remove default arrow if you want a custom icon */
 }
