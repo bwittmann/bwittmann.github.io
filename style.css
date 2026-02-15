@@ -101,3 +101,8 @@ summary.h3-style {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
+/* Make BibTeX summary normal weight */
+details.bibtex summary {
+  font-weight: normal; /* ensures it is NOT bold */
+}
