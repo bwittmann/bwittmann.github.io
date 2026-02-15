@@ -101,7 +101,7 @@ summary.h3-style {
   font-weight: 600;
   line-height: 1.6;
   margin-bottom: 20px;
-  padding-left: 16px; /* reliable indent */
+  margin-left: 16px; /* reliable indent */
 }
 
 /* Make BibTeX summary normal weight */
