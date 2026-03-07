@@ -108,3 +108,12 @@ summary.h3-style {
 details.bibtex > summary {
   font-weight: normal !important;
 }
+
+/* Change font for mail */
+.email-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: #f6f8fa;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 0.95em;
+}
